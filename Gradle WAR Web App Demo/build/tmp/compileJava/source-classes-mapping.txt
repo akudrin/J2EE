@@ -1,0 +1,2 @@
+org/gradle/demo/HelloServlet.java
+ org.gradle.demo.HelloServlet

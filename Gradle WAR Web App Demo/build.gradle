@@ -1,0 +1,21 @@
+
+plugins {
+    id 'war'
+    id 'org.gretty' version '3.0.3'  
+}
+
+gretty {
+    integrationTestTask = 'test'  
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    providedCompile 'javax.servlet:javax.servlet-api:4.0.1' 
+    testCompile 'junit:junit:4.13'
+    testCompile 'org.mockito:mockito-core:3.4.6'
+    testCompile 'io.github.bonigarcia:webdrivermanager:4.1.0' 
+    testCompile 'org.seleniumhq.selenium:selenium-java:3.14.0'
+}
